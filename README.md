@@ -13,11 +13,12 @@ This author of this [article](http://sunlightfoundation.com/blog/2014/03/11/maki
 
 __Usage__
 ```bash
-$ echo basic
-$ json2csv "test.json" "test.csv"
-$ echo "download json from web and transform"
-$ wget http://www.treasury.gov/jsonfiles/data.json > data.json & json2csv data.json data.csv
+$ ./JsonToCVS test.json test.csv
 ```
 
 __Dependencies__
 * [jsoncpp](https://github.com/open-source-parsers/jsoncpp) Open source JSON reader/writer
+Or: 
+```bash
+$ apt-get install libjsoncpp-dev
+```
